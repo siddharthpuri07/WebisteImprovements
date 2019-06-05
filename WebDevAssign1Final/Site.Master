@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebDevAssign1Final.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Content\scrolling-nav.css" rel="stylesheet">
+
+    <title>Token-N-Tickets</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <form id="form1" runat="server">
+
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="Default.aspx">Tokens-N-Tickets</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li class="btn-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Food & Beverage <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="UnderConstruction.aspx">Restaurant</a></li>
+                                <li class="divider"></li>
+                                <li><a href="UnderConstruction.aspx">Something</a></li>
+                                <li class="divider"></li>
+                                <li><a href="UnderConstruction.aspx">Else</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="btn-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Games & Arcade <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="UnderConstruction.aspx">Deals & Coupons</a></li>
+                                <li class="divider"></li>
+                                <li><a href="UnderConstruction.aspx">Prizes & Special</a></li>
+                                <li class="divider"></li>
+                                <li><a href="UnderConstruction.aspx">Else</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="btn-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Rentals <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="UnderConstruction.aspx">MoonWalk Rentals</a></li>
+                                <li class="divider"></li>
+                                <li><a href="UnderConstruction.aspx">Bounce House Rentals</a></li>
+                                <li class="divider"></li>
+                                <li><a href="UnderConstruction.aspx">Other Party Rentals</a></li>
+                            </ul>
+                        </li>
+                        <li class="btn-dropdown">
+                            <a href="#">Birthday Packages</a>
+                        </li>
+                        <li class="btn-dropdown">
+                            <a href="#">Fundraisers</a>
+                        </li>
+
+                        <li class="btn-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Us <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="About.aspx">About</a></li>
+                                <li class="divider"></li>
+                                <li><a href="UnderConstruction.aspx">Open Hours</a></li>
+                                <li class="divider"></li>
+                                <li><a href="Contact.aspx">Via Email</a></li>
+                                <li class="divider"></li>
+                                <li><a href="Improvement.aspx">Improvement</a></li>
+                                <li class="divider"></li>
+                                <li><a href="OldSite.aspx">Describes the Old Website</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+
+        </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="CPMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+        <div class="centre">
+            <hr />
+            <p class="footer-centre" style="text-align: center;">
+                <a href="~/Default.aspx" runat="server">Home</a> | <a href="#" runat="server">About</a> | <a href="#" runat="server">Contact Us</a> | <a href="#" runat="server">MoonWalk Rentals</a> | <a href="#" runat="server">Party Packs</a> | <a href="~/OldVsNew.aspx" runat="server">Prizes</a> | 
+                    <a href="#" runat="server">Restaurant</a> | <a href="#" runat="server">Fundraisers</a> | <a href="#" runat="server">Coupons & Deals </a>| <a href="#" runat="server">News</a> | <a href="#" runat="server">Hours </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
